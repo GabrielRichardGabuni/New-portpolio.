@@ -1,0 +1,383 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;   
+}
+:root
+{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #ff0505;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body
+{
+    background-color: #2a2a2a;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo
+{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span
+{
+    color: var(--main-color);
+}
+.navlist
+{
+    display: flex;
+}
+.navlist a
+{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+.navlist a:hover
+{
+    color: var(--main-color);
+}
+.navlist a.active
+{
+    color: var(--main-color);
+}
+#menu-icon
+{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section
+{
+    min-height: 100vh;
+    padding: 5rem 9% 2rem;
+    color: var(--text-color);
+}
+.home
+{
+    background: var(--second-bg-color);
+    margin-left: 8%;
+    margin-top: 15%;  
+}
+.pic1 img
+{
+    border-radius: 30%;
+    float: right
+    width: 40%;
+    height: 80%; 
+    position: absolute;
+    bottom: 0;
+    right: 300px;      
+}
+.slide
+{
+    margin-bottom: 20px;
+}
+.one
+{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two
+{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-text h1
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3
+{
+    color: var(--text-color);
+    margin: 0 0 25px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text p
+{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.educ
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.educ-img img
+{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.educ-text h2
+{
+    font-size: var(--h2-font);
+    line-height: 30px;
+}
+.educ-text h4
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 30px;
+    margin: 15px 0 30px;
+}
+.educ-text p
+{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 10px;
+    margin-bottom: 2rem;
+}
+
+.educ-text h3
+{
+    font-size: var(--h2-font);
+    line-height: 2;
+}
+.edulist
+{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+.skills
+{
+    background: var(--second-bg-color);
+}
+.main-text
+{
+    text-align: center;
+}
+.main-text h2
+{
+    font-size: var(--h2-font);
+    line-height: 2;
+}
+.skills-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box
+{
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 40px;
+    transition: all .45s ease;
+}
+.s-icons i
+{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.box h3
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.box p
+{
+    font-size: 40px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box:hover
+{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.portpolio-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;    
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+.row
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img
+{
+    width: 90%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.row p
+{
+    font-size: 11px;
+}
+.row1 img
+{
+    width: 80%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.row1 p
+{
+    font-size: 11px;
+}
+.row2 img
+{
+    width: 95%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.row2 p
+{
+    font-size: 11px;
+}
+.portpolio-content a
+{
+    color: var(--main-color);
+}
+
+.contact
+{
+    background: var(--second-bg-color);     
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact-text h4
+{
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2
+{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.contact-text p
+{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.list
+{
+    margin-bottom: 2.8rem;
+}
+.list li
+{
+    margin-bottom: 12px;
+}
+.list li a
+{
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+.list li a:hover
+{
+    color: var(--text-color);
+    transform: translateX(5px);
+
+}
+.contact-icons i
+{
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-icons i:hover
+{
+    background: var(--text-color);
+    color: var(--main-color);
+}
+.contact-content
+{
+   float: right;
+   margin-left: 850px;
+   margin-bottom: 50px;
+}
+
+.row3 img
+{
+    width: 500px;
+    float: right;
+    margin-bottom: 50px;
+}
